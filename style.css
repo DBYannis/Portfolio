@@ -39,7 +39,8 @@ h2 {
   display: flex;
 }
 .me {
-  width: 20%;
+  width: 500px;
+  height: 500px;
   margin-top: 50px;
   margin-left: 100px;
   border-radius: 25%;
