@@ -1,0 +1,277 @@
+/* animation sur la photo,
+relier nav avec la page,
+animation sur les compétences: bar qui augmente quand hover
+transform sur les les logos
+animations sur les fleches dans intérêts : déroulement pour afficher des affiches de films
+ajouter lecteur mp3 pour musique
+*/
+html {
+  font-family: 'Oswald', sans-serif;
+  background: rgb(153,135,81);
+  background: linear-gradient(0deg, rgba(153,135,81,1) 0%, rgba(230,199,110,0.40689779329700626) 100%);
+  margin: 0;
+}
+nav {
+  font-family: 'Oswald', sans-serif;
+}
+
+li {
+  font-size: 28px;
+  list-style-type: none;
+  text-align: center;
+  display: inline-block;
+  padding-left: 20px;
+}
+
+a {
+  color: #333333;
+  text-decoration: none;
+  transition: color 0.2s ease-in;
+}
+
+a:hover {
+  color: blueviolet;
+}
+h2 {
+  color: blueviolet;
+}
+.apropos-conteneur {
+  display: flex;
+}
+.me {
+  width: 20%;
+  margin-top: 50px;
+  margin-left: 100px;
+  border-radius: 25%;
+}
+
+.name {
+  color: blueviolet;
+  font-size: 46px;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+.pres {
+  font-size: 36px;
+  margin-left: 100px;
+  color: #333333;
+}
+
+.comp {
+  font-size: 46px;
+  margin-left: 100px;
+  margin-top: 50px;
+  color: blueviolet;
+}
+.made {
+  display: block;
+  color: #333333;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  height: 300px;
+  margin-left: 200px;
+}
+#competences {
+  height: 100px;
+}
+
+.button{
+  height:50px;
+  width:200px;
+  border:0;
+  background:rgb(186, 175, 155);
+  position:relative;
+  margin-left: 75px;
+  margin-right: 100px;
+  margin-bottom:5px;
+  font-size: 36px;
+  color: #333333;
+  border-radius: 5%;
+}
+.button:hover {
+  color: white;
+  background-color: blueviolet;
+  transition: all 0.5s ease-in ;
+}
+.english-hover:after{
+  position:absolute;
+  top:100%;
+  left:0%;
+  width:0;
+  height:5px;
+  background:blueviolet;
+  display:block;
+  content:'';
+  transition: width 0.5s ease-in-out;
+  margin-top: 5px;
+}
+.english-hover:hover:after{
+  width:100%;
+}
+.italian-hover:after{
+  position:absolute;
+  margin-top: 5px;
+  top:100%;
+  left:0%;
+  width:0;
+  height:5px;
+  background:blueviolet;
+  display:block;
+  content:'';
+  transition: width 0.5s ease-in-out;
+}
+.italian-hover:hover:after{
+  width:50%;
+}
+.spanish-hover:after{
+  position:absolute;
+  margin-top: 5px;
+  top:100%;
+  left:0%;
+  width:0;
+  height:5px;
+  background:blueviolet;
+  display:block;
+  content:'';
+  transition: width 0.5s ease-in-out;
+}
+.spanish-hover:hover:after{
+  width:25%;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  margin-left: 550px;
+}
+
+.html5 {
+  margin-top: 0px;
+}
+
+.css3 {
+  margin-top: 0px;
+  margin-left: 100px;
+}
+
+
+.git {
+  margin-top: 0px;
+  margin-left: 100px;
+}
+
+.js {
+  margin-top: 0px;
+  margin-left: 100px;
+}
+
+.chrome {
+  margin-top: 0px;
+  margin-left: 100px;
+}
+
+.figma {
+  margin-top: 0px;
+  margin-left: 100px;
+}
+
+.node {
+  margin-top: 0px;
+  margin-left: 100px;
+}
+
+.terminal {
+  margin-top: 0px;
+  margin-left: 100px;
+}
+
+
+#competences {
+  height: 350px;
+}
+
+.hobbies {
+  font-size: 46px;
+  margin-left: 100px;
+  margin-top: 50px;
+  color: blueviolet;
+}
+
+.movies {
+  display: flex;
+  justify-content: center;
+  font-size: 36px;
+  margin-left: 135px;
+  margin-top: 50px;
+  color: #333333;
+  width: 200px;
+}
+
+.carousel {
+  width: 200px;
+  height: 100vh;
+  position: relative;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 200ms opacity ease-in-out;
+  transition-delay: 200ms;
+  
+}
+
+.slide[data-active] {
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0ms;
+}
+
+.slide > img {
+  display: block;
+  object-fit: cover;
+  height: 380px;
+  width: 240px;
+  margin-left: 100px;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 27%;
+  font-size: 68px;
+  background: none;
+  border: none;
+  z-index: 2;
+  color: rgba(138, 43, 236, 1);
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  transform: translateY(-50%);
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+  color: rgb(199, 199, 199);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.carousel-button:focus {
+  outline: solid 1px black;
+}
+
+.carousel-button.prev {
+  left: 80px;
+}
+
+.carousel-button.next {
+  left: 365px;
+}

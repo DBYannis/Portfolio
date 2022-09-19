@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+  <title>Portfolio</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav-bar">
+        <li>
+          <a href="#apropos">A propos</a>
+        </li>
+        <li>
+          <a href="#competences">Compétences</a>
+        </li>
+        <li>
+          <a href="#interet">Centres d'intérêts</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section id="apropos">
+    <div class="apropos-conteneur">
+      <img class="me" src=".//images/photo1.jpg" alt="Photo de Yannis Denant-Boemont">
+      <div class="apropos-texte">
+        <h2 class="name">Yannis Denant-Boemont</h2>
+        <p class="pres">Je m’appelle Yannis, j’ai 24 ans et j’habite à Saint-Etienne. Je possède un baccalauréat littéraire ainsi que deux années en LLCER Anglais effectuées <br> à l’université Jean-Monnet à Saint-Etienne.</p>
+      </div>
+    </div>
+  </section>
+  <section id="competences">
+    <div class="competence-conteneur">
+      <h2 class="comp">Compétences</h2>
+    </div>
+    <div class="skills">
+      <button class="english-hover button">Anglais</button>
+      <button class="italian-hover button">Italien</button>
+      <button class="spanish-hover button">Espagnol</button>
+      <div class="icons">
+        <img class="html5" src="./images/html-five.svg" alt="icone d'HTML 5">
+        <img class="css3" src="./images/css3.svg" alt="icone de css 3">
+        <img class="js" src="./images/javascript-js.svg" alt="icone de Javascript">
+        <img class="git" src="./images/brand-github.svg" alt="icone de Github">
+        <img class="chrome" src="./images/chrome.svg" alt="icone de Google Chrome">
+        <img class="figma" src="./images/logo-figma.svg" alt="icone de Figma">
+        <img class="node" src="./images/node-js.svg" alt="icone de node-js">
+        <img class="terminal" src="./images/terminal.svg" alt="icone du terminal de commande">
+      </div>
+    </div>
+  </section>
+  <section>
+    <h2 class="hobbies">Centre d'intérêts</h2>
+    <div class="cinema">
+      <h3 class="movies">Cinéma</h3>
+      <section aria-label="Favorite Movies">
+        <div class="carousel" data-carousel>
+          <button class="carousel-button prev" data-carousel-button="prev">&#8249;</button>
+          <button class="carousel-button next" data-carousel-button="next">&#8250;</button>
+          <ul data-slides>
+            <li class="slide" data-active>
+              <img class="gump poster" src="./images/Forrest Gump.jpg" alt="affiche de Forrest Gump">
+            </li>
+            <li class="slide">
+              <img class="bttf poster" src="./images/Back to the Future.jpg" alt="affiche de retour vers le future">
+            </li>
+            <li class="slide">
+              <img class="gj poster" src="./images/Goodfellas.jpg" alt="affiche des Affranchis">
+            </li>
+            <li class="slide">
+              <img class="jp poster" src="./images/jurassic.jpg" alt="affiche de Jurassic Park">
+            </li>
+            <li class="slide">
+              <img class="dv poster" src="./images/drive.jpg" alt="affiche de Drive">
+            </li>
+            <li class="slide">
+              <img class="usl poster" src="./images/lake.jpg" alt="affiche d'Under the Silver Lake">
+            </li>
+            <li class="slide">
+              <img class="bb poster" src="./images/br.jpg" alt="affiche de Breaking Bad">
+            </li>
+            <li class="slide">
+              <img class="saul poster" src="./images/saul.jpg" alt="affiche de Better Call Saul">
+            </li>
+          </ul>
+      </div>
+      </section>
+    </div>
+  </section>
+</body>
+</html>
