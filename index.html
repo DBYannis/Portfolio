@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <script src="data.js" defer></script>
   <script src="script.js" defer></script>
   <title>Portfolio</title>
 </head>
@@ -35,7 +36,7 @@
       <img class="me" src=".//images/photo1.jpg" alt="Photo de Yannis Denant-Boemont">
       <div class="apropos-texte">
         <h2 class="name">Yannis Denant-Boemont</h2>
-        <p class="pres">Je m’appelle Yannis, j’ai 24 ans et j’habite à Saint-Etienne. Je possède un baccalauréat littéraire ainsi que deux années en LLCER Anglais effectuées <br> à l’université Jean-Monnet à Saint-Etienne.<br> J'ai commencé le code en Juin 2022 grâce a CodeCademy où j'ai acquéri beaucoup de compétences en HTML, CSS et JavaScript.<br> Je suis une personne exigente, créative et j'essaie toujours de dépasser mes limites.</p>
+        <p class="pres">Je m’appelle Yannis, j’ai 24 ans et j’habite à Saint-Etienne. J'ai effectué un baccalauréat littéraire suivi de deux années de LLCER Anglais à l’université Jean-Monnet de Saint-Etienne. J'ai commencé le code en <br> juin 2022 avec la formation CodeCademy qui m'a permis d'acquérir des compétences variées en HTML, CSS et JavaScript. Je suis une personne curieuse, créative qui essaie toujours de dépasser ses limites.</p>
       </div>
     </div>
   </section>
@@ -59,11 +60,11 @@
       </div>
     </div>
   </section>
+  <div><h2 class="hobbies">Centre d'intérêts</h2></div>
   <section id="interet">
-    <h2 class="hobbies">Centre d'intérêts</h2>
     <div class="cinema">
       <h3 class="movies">Cinéma</h3>
-      <section aria-label="Favorite Movies">
+      <section aria-label="Favorite Movies" class="favorite-movies">
         <div class="carousel" data-carousel>
           <button class="carousel-button prev" data-carousel-button="prev">&#8249;</button>
           <button class="carousel-button next" data-carousel-button="next">&#8250;</button>
@@ -95,6 +96,31 @@
           </ul>
       </div>
       </section>
+    </div>
+    <div>
+      <audio src="" id="audio"></audio>
+      <h3 class="music">Musique</h3>
+      <div class="music-player">
+        <h1 class="artist-name">KAYTRANADA</h1>
+        <p class="music-name">YOU'RE THE ONE</p>
+        
+        <div class="disk"></div>
+
+        <div class="song-slider">
+          <input type="range" value="0" class="seek-bar">
+          <span class="current-time">00:00</span>
+          <span class="song-duration">00:00</span>
+        </div>
+        <div class="controls">
+          <button class="btn backward-btn"><img src="./images/chevron-left-arrow.svg" alt="previous button"></button>
+          <button class="play-btn pause">
+            <span></span>
+            <span></span>
+          </button>
+          <button class="btn forward-btn"><img src="./images/chevron-right-arrow.svg" alt="next button"></button>
+          
+        </div>
+      </div>
     </div>
   </section>
 </body>
