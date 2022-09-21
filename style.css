@@ -6,6 +6,7 @@ animations sur les fleches dans intérêts : déroulement pour afficher des affi
 ajouter lecteur mp3 pour musique
 */
 html {
+  scroll-behavior: smooth;
   font-family: 'Oswald', sans-serif;
   background: #cbe0ca;
   margin: 0;
