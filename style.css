@@ -10,6 +10,9 @@ html {
   background: #cbe0ca;
   margin: 0;
 }
+
+/*Menu de Navigation*/
+
 nav {
   font-family: 'Oswald', sans-serif;
 }
@@ -31,6 +34,9 @@ a {
 a:hover {
   color: #37078f;
 }
+
+/* Section A propos*/
+
 h2 {
   color: #37078f;
 }
@@ -57,6 +63,8 @@ h2 {
   margin-left: 100px;
   color: #333333;
 }
+
+/* Compétences*/
 
 .comp {
   font-size: 46px;
@@ -159,37 +167,51 @@ h2 {
 }
 
 .css3 {
+  width: 60px;
+  height: 60px;
   margin-top: 0px;
   margin-left: 100px;
 }
 
 
 .git {
+  width: 60px;
+  height: 60px;
   margin-top: 0px;
   margin-left: 100px;
 }
 
 .js {
+  width: 60px;
+  height: 60px;
   margin-top: 0px;
   margin-left: 100px;
 }
 
 .chrome {
+  width: 60px;
+  height: 60px;
   margin-top: 0px;
   margin-left: 100px;
 }
 
 .figma {
+  width: 60px;
+  height: 60px;
   margin-top: 0px;
   margin-left: 100px;
 }
 
 .node {
+  width: 60px;
+  height: 60px;
   margin-top: 0px;
   margin-left: 100px;
 }
 
 .terminal {
+  width: 60px;
+  height: 60px;
   margin-top: 0px;
   margin-left: 100px;
 }
@@ -283,7 +305,7 @@ h2 {
 }
 
 .cinema {
-  width: 600px;
+  width: 500px;
   height: 500px;
   margin-right: 0;
 }
@@ -291,6 +313,7 @@ h2 {
 #interet {
   display: flex;
   flex-direction: row;
+  margin-left: 60px;
 }
 
 .music{
@@ -377,7 +400,7 @@ h2 {
 
 .seek-bar::-webkit-slider-thumb{
   -webkit-appearance: none;
-  width: 1px;
+  width: 5px;
   height: 10px;
   background: #37078f;
   box-shadow: -400px 0 0 400px #37078f;
@@ -482,3 +505,208 @@ h2 {
   }
 }
 
+.pop-title{
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  font-size: 36px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  margin-left: 150px;
+  color: #333333;
+  width: 200px;
+}
+
+.pop-culture{
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+}
+/*Animation BD*/
+.bd{
+  background:rgb(186, 175, 155);
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #333333;
+  font-weight: bold;
+  font-size: 36px;
+  transition: all 0.2s ease-in 0.1s;;
+  
+}
+
+.bd-text{
+  margin-left: 100px;
+  font-size: 22px;
+  
+}
+
+.drop-down-bd{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 100%;
+  background-image: url(./images/imageedit_1_7991260707.png);
+  background-size: cover;
+  border-radius: 20px;
+  margin-left: 75px;
+  margin-bottom: 10px;
+}
+
+.bd:hover{
+  background-color: #37078f;
+  color: white;
+  cursor: pointer;
+}
+.drop-down-bd .image-bd{
+  position: fixed;
+  z-index: 10;
+  top: -100%;
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5rem 4rem 2rem 4rem;
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 64px 0 rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: top 0.2s ease-in, 
+              opacity 0.2s linear;
+}
+
+.drop-down-bd:hover .image-bd{
+  top: 0;
+  opacity: 1;
+}
+
+.img-bd{
+  width: 200px;
+  height: 200px;
+  margin-left: 50px;
+}
+
+/*Animation Jeux*/
+
+.games{
+  background:rgb(186, 175, 155);
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #333333;
+  font-weight: bold;
+  font-size: 36px;
+  transition: all 0.2s ease-in 0.2s;
+}
+
+.drop-down-games{
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 100%;
+  background-image: url(./images/edit.png);
+  background-size: cover;
+  border-radius: 20px;
+  margin-left: 75px;
+}
+
+.games:hover{
+  background-color: #37078f;
+  color: white;
+  cursor: pointer;
+}
+
+.drop-down-games .image-games{
+  position: fixed;
+  z-index: 10;
+  top: -100%;
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5rem 4rem 2rem 4rem;
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 64px 0 rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: top 0.2s ease-in, 
+              opacity 0.2s linear;
+}
+
+.drop-down-games:hover .image-games{
+  top: 0;
+  opacity: 1;
+}
+
+.img-games{
+  width: 200px;
+  height: 300px;
+  margin-left: 50px;
+}
+
+.abyss{
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.lueur{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+
+
+footer{
+  height: 400px;
+}
+
+.footer{
+  padding: 0px 5px 5px 5px;
+  border-radius: 10px;
+  height: 100px;
+  width: 22%;
+  margin: 5px 1% 5px 100px;
+  float: left;
+  position: relative;
+  transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+  text-align: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #B6C9B6;
+  transition: 0.75s;
+  bottom: 25px;
+}
+
+.footer:hover{
+  height: 300px;
+  width: 50vw;
+  background-color: #cbe0ca;
+}
+.contact{
+  position: relative;
+  bottom: 25px;
+  font-size: 46px;
+  border-radius: 15px;
+}
+.contact-list{
+  display: flex;
+  flex-direction: row;
+}
+
+.phone-logo{
+  margin-left: 15px;
+}
+
+.mail-logo{
+  margin-left: 15px;
+}
+
+.git-logo{
+  margin-left: 15px;
+}
+
+.contact-text {
+  color: #333333;
+}
