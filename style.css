@@ -468,3 +468,28 @@ hr {
     right: 200px;
     box-shadow: -5px 7px 15px 2px rgba(0, 0, 0, 0.69);
 }
+
+#footer {
+    height: 150px;
+    background: rgb(222,201,127);
+    background: linear-gradient(90deg, rgba(222,201,127,1) 0%, rgba(230,188,43,1) 100%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.footer_logo {
+    width: 80px;
+    height: 50px;
+    transition: all 0.1s ease-in;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.footer_logo:hover {
+    width: 90px;
+    height: 60px;
+}
