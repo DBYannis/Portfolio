@@ -9,7 +9,7 @@ const Cv = () => {
       <a href={cv} download className='cv_text'>
         Télécharger le CV
       </a>
-      <FontAwesomeIcon icon={faFileArrowDown} size="2xl" style={{color: "#1b1b1b", width: '50px', height: '50px'}} />
+      <FontAwesomeIcon icon={faFileArrowDown} size="2xl" className='icon_cv' />
     </div>
   );
 };
