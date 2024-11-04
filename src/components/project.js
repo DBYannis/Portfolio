@@ -17,6 +17,9 @@ import Pokedex3 from '../images/pokedex_mobile.png'
 import Mymoviz1 from '../images/mymoviz.png'
 import Mymoviz2 from '../images/mymoviztablet.png'
 import Mymoviz3 from '../images/mymovizmobile.png'
+import Mapquest1 from '../images/mapquestportfolio.png'
+import Mapquest2 from '../images/mapquestportfolio2.png'
+import Mapquest3 from '../images/mapquestportfolio3.png'
 import Drugsync from '../videos/DrugsyncV2.mp4'
 import Catalogo from '../videos/Catalogo.mp4'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -96,6 +99,18 @@ const Project = () => {
                 <p className='project_name'>My Moviz</p>
                 <hr className='project_separator' />
                 <p className='project_text'>My Moviz est une application en React faite durant ma formation. Cette application permet de noter des films, de consulter les notes et de les ajouter dans une liste.</p>
+            </div>
+
+            <div className='project'>
+                <img src={Mapquest1} alt='MapQuest' className='project_img_desk'/>
+                <img src={Mapquest2} alt='MapQuest' className='project_img_tablet'/>
+                <img src={Mapquest3} alt='MapQuest' className='project_img_mobile'/>
+            </div>
+            <div className='project_info'>
+                <a href='https://www.linkedin.com/feed/update/urn:li:ugcPost:7259241236224520193/' target="_blank" rel="noreferrer" className='project_name'>MapQuest</a>
+                <FontAwesomeIcon icon={faArrowUpRightFromSquare} size="sm" style={{color: "#ffffff", marginLeft:'10px'}} />
+                <hr className='project_separator' />
+                <p className='project_text'>MapQuest est une application réalisée en React. Je me suis inspiré de jeux comme GeoGuessr et Bandle pour créer ce jeu qui consiste à identifier une ville grâce à sa carte satellite. Le jeu est jouable en anglais et en français et est totalement responsive. Vous pouvez le tester en cliquant <span onClick={() => window.open('https://map-quest-blue.vercel.app/', '_blank')} style={{ color: '#ffffff', textDecoration: 'underline', cursor: 'pointer' }}>ici</span>.</p>
             </div>
 
             <div className='project_video'>
